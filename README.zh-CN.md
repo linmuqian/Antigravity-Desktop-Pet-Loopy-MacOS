@@ -4,6 +4,19 @@
 
 Loopy 穿着粉色小猪装，鼠标移到她身上时会跳起来，按住她往哪边拖，她就朝哪边跑。她身下有一排工具按钮，可以打开 Google Antigravity，也可以查看最近的对话。
 
+## 下载安装
+
+**[下载 macOS 版 Loopy（ZIP，4.03 MB）](https://github.com/linmuqian/Antigravity-Desktop-Pet-Loopy-MacOS/releases/download/macos-universal/Loopy-macOS-Universal.zip)**
+
+支持 macOS 12 及以上的 Apple 芯片和 Intel Mac。压缩包里已包含应用、动画和 Lua 运行环境，无需另下源码或安装编译工具。
+
+1. 在访达中双击 `Loopy-macOS-Universal.zip` 解压。
+2. 把 `Loopy.app` 拖进「应用程序」文件夹，再双击启动。
+
+Loopy 可以独立运行。要用写字和语音按钮，或查看最近的对话，还需要安装 Google Antigravity。
+
+如果首次打开时 macOS 提示无法验证 Loopy，确认你信任下载来源后，可以前往「系统设置 → 隐私与安全性」，找到 Loopy 并点「仍要打开」。[Apple 官方说明](https://support.apple.com/zh-cn/102445)
+
 ![穿着粉色小猪装的 Loopy](./Resources/Frames/0-0.png)
 
 ## 和 Loopy 互动
@@ -18,7 +31,7 @@ Loopy 穿着粉色小猪装，鼠标移到她身上时会跳起来，按住她�
 | 点折叠箭头 | 在实时动态和最近对话卡片之间切换。点一张卡片可以查看详情。 |
 | 右键点她 | 预览动作，或选择「退出 Loopy」。 |
 
-## 编译和启动
+## 从源码编译
 
 Loopy 支持 macOS 12 及以上的 Apple 芯片和 Intel Mac。项目已包含 Lua 源码和美术素材。如果还没有安装 Apple 命令行工具，先运行 `xcode-select --install`，然后在仓库根目录运行以下命令。
 

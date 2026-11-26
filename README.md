@@ -4,6 +4,19 @@
 
 Loopy is a desktop pet for Google Antigravity. She wears a pink pig costume, jumps when you hover over her, and runs in the direction you drag her. Her toolbar lets you bring Antigravity forward or glance at recent conversations.
 
+## Download for macOS
+
+**[Download Loopy for macOS (ZIP, 4.03 MB)](https://github.com/linmuqian/Antigravity-Desktop-Pet-Loopy-MacOS/releases/download/macos-universal/Loopy-macOS-Universal.zip)**
+
+For Apple silicon and Intel Macs running macOS 12 or later. The ZIP includes the app, animations and Lua runtime. No source download or build tools are required.
+
+1. Double-click `Loopy-macOS-Universal.zip` in Finder to extract it.
+2. Drag `Loopy.app` into your Applications folder, then double-click it.
+
+Loopy can keep you company on her own. Install Google Antigravity to use the pencil and voice buttons or display its recent conversations.
+
+If macOS says it cannot verify Loopy the first time you open it, and you trust this download, go to **System Settings → Privacy & Security** and choose **Open Anyway** for Loopy. [Apple’s guide](https://support.apple.com/en-us/102445)
+
 ![Loopy in her pink pig costume](./Resources/Frames/0-0.png)
 
 ## Using Loopy
@@ -18,7 +31,7 @@ Loopy is a desktop pet for Google Antigravity. She wears a pink pig costume, jum
 | Click the chevron | Switch between live activity and recent conversation cards. Click a card for details. |
 | Right-click her | Preview animations or quit Loopy. |
 
-## Build and run
+## Build from source
 
 Loopy runs on Apple silicon and Intel Macs with macOS 12 or later. The project includes the Lua source and artwork. To build it, install Apple's Command Line Tools with `xcode-select --install` if needed, then run these commands from the repository root.
 
