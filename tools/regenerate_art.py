@@ -1,4 +1,4 @@
-"""Regenerate the macOS frames, icon, and controls from the project artwork."""
+"""Regenerate the frames, icons, and controls from the project artwork."""
 from pathlib import Path
 
 from PIL import Image
@@ -7,6 +7,7 @@ from pet_surfaces import assets
 
 ROOT = Path(__file__).resolve().parents[1]
 RESOURCES = ROOT / "Resources"
+WINDOWS_RESOURCES = ROOT / "windows" / "Skins" / "Loopy" / "@Resources"
 FRAME_WIDTH = 192
 FRAME_HEIGHT = 208
 ROW_LENGTHS = (6, 8, 8, 4, 5, 8, 6, 6, 6, 8, 8)
@@ -38,6 +39,11 @@ def build_icon():
     icon = Image.new("RGBA", (1024, 1024))
     icon.alpha_composite(pet, ((1024 - pet.width) // 2, (1024 - pet.height) // 2))
     icon.save(RESOURCES / "Loopy.icns", format="ICNS")
+    if WINDOWS_RESOURCES.exists():
+        icon.save(
+            WINDOWS_RESOURCES / "Loopy.ico",
+            sizes=[(16, 16), (24, 24), (32, 32), (48, 48), (64, 64), (128, 128), (256, 256)],
+        )
 
 
 if __name__ == "__main__":
